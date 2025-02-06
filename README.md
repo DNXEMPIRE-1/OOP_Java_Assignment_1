@@ -25,10 +25,7 @@ Buddy is running...
 Buddy is sleeping...
 ```
 
-## Submission
-1. Push the project to GitHub.
-2. Add a proper `README.md`.
-3. Submit the GitHub link before **EOD February 4, 2025**.
 
-Let me know if you need modifications or explanations! 🚀
+
+DNX! Happy Coding! 🚀
 
