@@ -1,9 +1,9 @@
-// Interface: Defines a blueprint for an animal with a method signature but no implementation
+// Interface
 interface Animal {
-    void makeSound(); // Abstract method (no implementation)
+    void makeSound(); // Abstract method
 }
 
-// Abstract Class: Provides some implementation but still requires subclasses to implement abstract methods
+// Abstract Class
 abstract class Mammal implements Animal {
     protected String name;
 
@@ -11,33 +11,33 @@ abstract class Mammal implements Animal {
         this.name = name;
     }
 
-    // Concrete method (implemented)
+    // Concrete method
     public void sleep() {
         System.out.println(name + " is sleeping...");
     }
 
-    // Abstract method (must be implemented by subclasses)
+    // Abstract method 
     public abstract void move();
 }
 
-// Concrete Class: Implements all abstract methods and can be instantiated
+// Concrete Class
 class Dog extends Mammal {
     public Dog(String name) {
         super(name);
     }
 
-    // Implementing abstract method from Mammal
+    // abstract method from Mammal
     public void move() {
         System.out.println(name + " is running...");
     }
 
-    // Implementing method from interface
+    // method from interface
     public void makeSound() {
         System.out.println(name + " barks: Woof! Woof!");
     }
 }
 
-// Testing the implementation
+// Testing
 public class Main {
     public static void main(String[] args) {
         Dog myDog = new Dog("Buddy");
